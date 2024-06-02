@@ -46,6 +46,13 @@ enable_auto_refresh = True
 refresh_interval = 24
 enable_system_updates = False
 
+[update_manager timelapse]
+type = git_repo
+primary_branch = main
+path = /usr/data/helper-script/files/moonraker-timelapse
+origin = https://github.com/mainsail-crew/moonraker-timelapse.git
+managed_services = klipper moonraker
+
 [update_manager Creality-Helper-Script]
 type = git_repo
 channel = dev
