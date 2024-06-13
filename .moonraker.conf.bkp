@@ -76,13 +76,6 @@ requirements = scripts/mobileraker-requirements.txt
 install_script = scripts/install.sh
 managed_services = mobileraker
 
-[update_manager timelapse]
-type = git_repo
-primary_branch = main
-path = /usr/data/helper-script/files/moonraker-timelapse
-origin = https://github.com/mainsail-crew/moonraker-timelapse.git
-managed_services = klipper moonraker
-
 [spoolman]
 server = http://192.168.1.222:7912
 sync_rate = 5
